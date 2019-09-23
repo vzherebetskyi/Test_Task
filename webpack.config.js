@@ -22,8 +22,8 @@ module.exports = {
         //     ]
         // }
     ]
-    },
-    devServer: {
-        contentBase: path.join(__dirname, 'public')        
     }
+    // devServer: {
+    //     contentBase: path.join(__dirname, 'public')        
+    // }
 };

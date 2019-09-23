@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start_2": "webpack-dev-server --open",
     "start": "node server.js",
-    "heroku-postbuild": "webpack"
+    "heroku-postbuild": "webpack -p"
   },
   "author": "vzherebetskyi",
   "license": "MIT",
