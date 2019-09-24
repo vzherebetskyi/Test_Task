@@ -53,7 +53,7 @@ function HookTable(props)  {
             <div style = {{marginTop: '10%'}}>
                 <h2>Some instructions</h2>
                 <p>1. You can use the following instructions: =SUM(), =AVERAGE(), =CONCAT(), =HYPERLINK()</p>
-        <p>2. In order to use them you shoul write in the cell something like =SUM(line number 1, column number 1; line number 2, column number 2...). <br/>
+        <p>2. In order to use them you should write in the cell something like =SUM(line number 1, column number 1; line number 2, column number 2...). <br/>
            For instance this =SUM(1,1;1,2;1,3) stands for adding data in the first, second and third cells. <br/>
            The same works for =AVERAGE() and =CONCAT(). To test if entered data is a link you just <br/> 
            need to enter in the instruction =HYPERLINK(data) where 'data' is the link you want to test<br/>

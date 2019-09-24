@@ -12,8 +12,8 @@ const informationLine = (props) => {
 
 const connectedInformationLine = (state) => {
     return{
-        inFocus: state.cells[0].focus ? state.cells.find((cell) => 
-        cell.lineNumber === state.cells[0].focus[0] && cell.columnNumber === state.cells[0].focus[1]
+        inFocus: state[0].focus ? state.find((cell) => 
+        cell.lineNumber === state[0].focus[0] && cell.columnNumber === state[0].focus[1]
         )  
         : undefined 
     };

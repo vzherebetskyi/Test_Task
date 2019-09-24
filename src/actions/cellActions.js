@@ -44,13 +44,9 @@ export const inputData = (data, l, c) => {
         }
         else if (SUM_REGEX.test(data)) {
             let answer = getRightData(data, 'sum');
-            console.log(answer);
             if (answer === 'outside of range') {
                  dispatch(handleInput(answer, 'SUM', l, c));
             }
-            // else if (l1 === l2 && c1 === c2) {
-            //     dispatch(handleInput('cannot add same cell to itself', 'SUM', l, c))  
-            // }
             else dispatch(handleSum(answer[0], answer[1], 'SUM', l, c));
         }
         else if (URL_REGEX.test(data)) {
@@ -127,5 +123,3 @@ export const handleInFocus = (lineNumber, columnNumber) => ({
     lineNumber,
     columnNumber
 });
-
-// =SUM(1,1;1,2;2,1;2,2;2,3

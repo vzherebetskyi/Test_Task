@@ -24,7 +24,7 @@ const Cell = (props) => {
 
 const connectedCell = (state, props) => {
     return{
-        input: state.cells.find((cell) => 
+        input: state.find((cell) => 
             cell.lineNumber === props.l && cell.columnNumber === props.c
         )   
     };

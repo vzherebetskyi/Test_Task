@@ -6,7 +6,6 @@ import configureStore from './store/configureStore';
 import Table from './components/HookTable';
 
 const store = configureStore();
-// store.dispatch(addCell({ lineNumber: 7, columnNumber: 7 }));
 // store.subscribe(() => {
 //     console.log( store.getState() );
 // });

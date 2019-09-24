@@ -1,12 +1,12 @@
 import { cellDefaultState } from './defaultState';
 
 export default (state = cellDefaultState, action) => {
-    switch (action.type) {
-        case 'ADD_CELL':
-         return [
-            ...state,
-            action.cell
-          ];
+  switch (action.type) {
+    case 'ADD_CELL':
+      return [
+        ...state,
+        action.cell
+      ];
         case 'INPUT_DATA':
         return state.map((cell, i) => 
             cell.lineNumber === action.lineNumber && cell.columnNumber === action.columnNumber ? 
@@ -128,6 +128,3 @@ export default (state = cellDefaultState, action) => {
          return state;
     }
 };
-
-//.replace(/\,/,'.')
-// answer[i].indexOf(',') === -1 ? parseFloat(answer[i].slice(3, answer[i].length)) :

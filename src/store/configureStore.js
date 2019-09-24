@@ -1,4 +1,4 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
 import cellReducer from '../reducers/cellReducer';
@@ -7,9 +7,7 @@ import cellReducer from '../reducers/cellReducer';
 
 export default () => {
     const store = createStore(
-        combineReducers({
-            cells: cellReducer
-        }), applyMiddleware(thunk)
+        cellReducer, applyMiddleware(thunk)
     );
     return store;
 };

@@ -11,7 +11,7 @@ const anError = (props) => {
 
 const connectedError = (state) => {
     return{
-        inError: state.cells[0].error ? state.cells[0].error : undefined 
+        inError: state[0].error ? state[0].error : undefined 
     };
 };
 
