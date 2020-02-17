@@ -1,13 +1,12 @@
-import { createStore, applyMiddleware } from 'redux';
-import thunk from 'redux-thunk';
+import { createStore } from 'redux';
 
 import cellReducer from '../reducers/cellReducer';
 
-//Store creation
+// Store creation
 
 export default () => {
-    const store = createStore(
-        cellReducer, applyMiddleware(thunk)
-    );
-    return store;
+  const store = createStore(
+    cellReducer,
+  );
+  return store;
 };

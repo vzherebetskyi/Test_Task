@@ -10,10 +10,10 @@ import { addCell } from '../actions/cellActions';
 class Table extends React.Component {
     constructor(props) {
         super(props);
-//l stands for lines and c stands for columns
+// l stands for lines and c stands for columns
         let l = LINES;
         let table = [];
-//this while is used for the table generation with pre-defined lines and columns
+// this while is used for the table generation with pre-defined lines and columns
          while (l > 0) {
             table.push([]);
             let c = COLUMNS;

@@ -1,3 +1,5 @@
-//default state for the cell
+// default state for the cell
 
-export const cellDefaultState = [ {error: undefined, focus: undefined} ];
+const cellDefaultState = [{ error: undefined, focus: undefined }];
+
+export default cellDefaultState;

@@ -4,8 +4,7 @@
   "description": "This is a test_task",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start_2": "webpack-dev-server --open",
+    "run_dev": "webpack-dev-server --open",
     "start": "node server.js",
     "heroku-postbuild": "webpack -p"
   },
@@ -22,18 +21,18 @@
     "react-dom": "^16.9.0",
     "react-redux": "5.0.5",
     "redux": "3.7.2",
-    "redux-thunk": "2.3.0",
-    "webpack": "3.1.0",
-    "webpack-dev-server": "2.5.1"
+    "webpack": "3.1.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.3",
     "babel-preset-env": "^1.7.0",
     "eslint": "^6.4.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
-    "eslint-plugin-react-hooks": "^1.7.0"
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "webpack-dev-server": "2.5.1"
   }
 }
