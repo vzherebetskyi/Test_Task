@@ -16,7 +16,7 @@
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-object-rest-spread": "6.23.0",
     "babel-preset-react": "^6.24.1",
-    "express": "4.16.4",
+    "express": "4.17.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "5.0.5",
